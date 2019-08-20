@@ -1,4 +1,7 @@
 # Making-PATE-Bidirecitonally-Private
+
+- Medium Article: [Making PATE Bidirectionally Private. Alejandro Aristizábal Medina](https://medium.com/@alejandro.aristizabal24/making-pate-bidirectionally-private-6d060f039227)
+
 A step-by-step guide demonstrating how the PATE Framework works and how to make it bidirectionally private by adding an encryption layer.
 
 PATE, or Private Aggregation of Teacher Ensembles, is a machine learning framework proposed by Papernot et al. in the paper [Semi-Supervised Knowledge Transfer for Deep Learning from Private Training Data](https://arxiv.org/pdf/1610.05755.pdf). This framework allows for semi-supervised learning with private data while retaining both intuitive and strong privacy guarantees.
@@ -13,11 +16,6 @@ Here, we are going to explore how to apply these changes and how it affects the 
 
 # Contents
 This repo contains a notebook with a step-by-step guide on implementing PATE and adding encryption. Since this is for educational purposes, the MNIST dataset was used to demonstrate the procedure and the issues at hand.
-
-# Additional links
-A Medium Article has been published, where this project is fully explained and demonstrated with visuals and commented code. It is higly recommended to read this article along with this project.
-
-[Making PATE Bidirectionally Private. Alejandro Aristizábal Medina](https://medium.com/@alejandro.aristizabal24/making-pate-bidirectionally-private-6d060f039227)
 
 # Additional Notes
 This repo was developed  as part of Udacity’s Secure and Private AI Nanodegree Program. The intention of this repo is to present and explain my final project for the course and it should be regarded as such.
