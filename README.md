@@ -1,4 +1,4 @@
-# Making-PATE-Bidirecitonally-Private
+# Making PATE Bidirecitonally Private
 
 - Medium Article: [Making PATE Bidirectionally Private. Alejandro Aristizábal Medina](https://medium.com/@alejandro.aristizabal24/making-pate-bidirectionally-private-6d060f039227)
 
