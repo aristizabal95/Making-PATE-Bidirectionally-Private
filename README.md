@@ -5,7 +5,9 @@ PATE, or Private Aggregation of Teacher Ensembles, is a machine learning framewo
 
 PATE has shown to achieve state-of-the-art privacy/utility trade-offs, while also having a flexible and widely applicable implementation. There are, however, some situations in which this framework struggles. This is when there is no access to public data, or when the student’s data is necessarily private. PATE requires the student to share its data with all the teachers, and therefore no privacy is guaranteed in this process. An example of such a situation is when a Hospital wants to train a neural network for diagnosis and uses other hospitals as “teachers” to label its dataset. In such a situation, PATE may be infeasible, because the “student” hospital is probably obliged (either morally or legally) to maintain its dataset private.
 
-Because of this, an additional step is proposed, where the teacher ensemble is considered as “Machine Learning as a Service” (MLaaS), and encryption is added to provide secrecy for the student’s dataset. Here, we are going to explore how to apply these changes and how it affects the PATE Framework procedure.
+Because of this, an additional step is proposed, where the teacher ensemble is considered as “Machine Learning as a Service” (MLaaS), and encryption is added to provide secrecy for the student’s dataset. This new implementation opens up the possibility to use PATE in scenarios were none of the parties have an interest of sharing their data. Be it for legal reasons, as the example provided above, or for market reasons, like tech companies working together to develop better applications without ever needing to expose their client's usage data.
+
+Here, we are going to explore how to apply these changes and how it affects the PATE Framework procedure.
 
 # Contents
 This repo contains a notebook with a step-by-step guide on implementing PATE and adding encryption. Since this is for educational purposes, the MNIST dataset was used to demonstrate the procedure and the issues at hand.
