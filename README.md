@@ -4,6 +4,16 @@
 
 A step-by-step guide demonstrating how the PATE Framework works and how to make it bidirectionally private by adding an encryption layer.
 
+## Prerequisites:
+It is recommended to create a conda environment for this repo, since it requires old versions of widely used libraries (e.g. numpy, torch, torchvision, syft, etc.)
+- Python >=3.4
+- PySyft v0.1.23a1 [Note: Must be installed from a fork I made, since the older version was broken]
+    `pip install -e git+https://github.com/aristizabal95/PySyft.git#egg=syft`
+- PyTorch. Already installed once PySyft is installed
+- Jupyter Notebook: `conda install jupyter notebook`
+    
+## Contents
+
 PATE, or Private Aggregation of Teacher Ensembles, is a machine learning framework proposed by Papernot et al. in the paper [Semi-Supervised Knowledge Transfer for Deep Learning from Private Training Data](https://arxiv.org/pdf/1610.05755.pdf). This framework allows for semi-supervised learning with private data while retaining both intuitive and strong privacy guarantees.
 
 PATE has shown to achieve state-of-the-art privacy/utility trade-offs, while also having a flexible and widely applicable implementation. There are, however, some situations in which this framework struggles. This is when there is no access to public data, or when the student’s data is necessarily private. PATE requires the student to share its data with all the teachers, and therefore no privacy is guaranteed in this process. An example of such a situation is when a Hospital wants to train a neural network for diagnosis and uses other hospitals as “teachers” to label its dataset. In such a situation, PATE may be infeasible, because the “student” hospital is probably obliged (either morally or legally) to maintain its dataset private.
